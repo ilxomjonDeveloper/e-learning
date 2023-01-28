@@ -1,6 +1,6 @@
 import React from "react";
 // import images
-import homeIntro2 from "../images/homeIntro2.jpg"
+import homeIntro2 from "../images/home_intro2.jpg"
 
 const BenefitsSection = () => {
   return <div className="benefits">
