@@ -2,7 +2,7 @@ import React from "react";
 // import images
 import homeIntro from "../images/home_intro.jpg";
 // import styled
-import styled from "styled-components";
+import { About, Description, Hide, Image } from "../styles";
 
 const AboutSection = () => {
   return (
@@ -35,30 +35,5 @@ const AboutSection = () => {
 };
 
 // Styled Components
-const About = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5rem 7rem;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-`;
-
-const Image = styled.div`
-  overflow: hidden;
-  flex: 1;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`
 
 export default AboutSection;

@@ -1,9 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 import QuestionFaqSection from "./QuestionFaqSection";
+import { About } from "../styles";
 
 const FaqSection = () => {
   return (
-    <div>
+    <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -31,8 +33,30 @@ const FaqSection = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure labore ratione aut soluta eligendi doloremque possimus odit deleniti, perspiciatis atque."
         }
       />
-    </div>
+    </Faq>
   );
 };
+
+// styled
+const Faq = styled(About)`
+  display: block;
+  font-weight: lighter;
+  .question {
+    padding: 3rem 0rem;
+    cursor: pointer;
+  }
+  .answer {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
+  .faq-line {
+    background-color: #ccc;
+    height: 0.2rem;
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+`
 
 export default FaqSection;
