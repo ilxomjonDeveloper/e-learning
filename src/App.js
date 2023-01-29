@@ -3,12 +3,13 @@ import React from "react";
 import AboutUs from "./pages/AboutUs";
 // import styles
 import GlobalStyle from "./components/GlobalStyle";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>e-Learning</h1>
       <GlobalStyle />
+      <Nav />
       <AboutUs />
     </div>
   );
