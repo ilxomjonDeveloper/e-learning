@@ -6,7 +6,7 @@ import { About, Description, Hide, Image } from "../styles";
 
 const AboutSection = () => {
   return (
-    <About>
+    <About> 
       <Description>
         <div className="title">
           <Hide>
